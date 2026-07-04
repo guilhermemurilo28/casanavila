@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casa na Vila Praia do Retirinho — R$ 380.000 · Aracati, CE</title>
+<meta name="description" content="Casa de 96m² na Vila Praia do Retirinho, Aracati-CE, por R$380.000 — a mais barata da vila. Retorno já provado pela casa gêmea: R$100 mil faturados em diárias. Gestão da Mandinga Imóveis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FCFAF4;
+    --cream-2:#F4EFE6;
+    --paper:#EDE7DA;
+    --ink:#14231F;
+    --ink-2:#3B463F;
+    --teal:#2F6E63;
+    --teal-deep:#0B2521;
+    --sage:#7FB6A8;
+    --sage-2:#9FB3AC;
+    --terracotta:#B0784A;
+    --terracotta-deep:#8F5D37;
+    --line:#E2DBCB;
+    --r:16px;
+    --r-lg:28px;
+    --shadow-soft:0 18px 46px -26px rgba(11,37,33,.35);
+    --shadow-strong:0 26px 60px -24px rgba(11,37,33,.5);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Hanken Grotesk',sans-serif;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  h1,h2,h3{font-family:'Newsreader',serif;font-weight:500;letter-spacing:-.01em;margin:0;color:var(--teal-deep);}
+  .serif-italic{font-style:italic;font-weight:400;color:var(--terracotta-deep);}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
+  .eyebrow{
+    font-family:'Hanken Grotesk',sans-serif;
+    font-size:12px;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--teal);
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .eyebrow::before{content:"";width:22px;height:2px;background:var(--terracotta);display:inline-block;}
+  :focus-visible{outline:3px solid var(--terracotta);outline-offset:3px;}
+
+  /* ---------- NAV ---------- */
+  header.nav{
+    position:sticky;top:0;z-index:50;
+    padding:16px 0;
+    background:rgba(252,250,244,0);
+    transition:background .25s ease, box-shadow .25s ease, padding .25s ease;
+  }
+  header.nav.scrolled{
+    background:rgba(252,250,244,.92);
+    backdrop-filter:blur(10px);
+    box-shadow:0 1px 0 var(--line);
+    padding:10px 0;
+  }
+  header.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;}
+  .brand{display:flex;flex-direction:column;line-height:1.1;}
+  .brand strong{font-family:'Newsreader',serif;font-size:18px;color:var(--teal-deep);}
+  .brand span{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    font-family:'Hanken Grotesk',sans-serif;font-weight:700;font-size:15px;
+    padding:13px 24px;border-radius:999px;text-decoration:none;
+    border:1px solid transparent;cursor:pointer;
+    transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+    white-space:nowrap;
+  }
+  .btn:hover{transform:translateY(-2px);}
+  .btn-primary{background:var(--terracotta);color:var(--cream);box-shadow:var(--shadow-soft);}
+  .btn-primary:hover{background:var(--terracotta-deep);}
+  .btn-ghost{background:transparent;color:var(--teal-deep);border-color:var(--teal-deep);}
+  .btn-ghost:hover{background:var(--teal-deep);color:var(--cream);}
+  .btn-block{width:100%;}
+  .btn-sm{padding:10px 18px;font-size:13.5px;}
+  @media(max-width:640px){ header.nav .btn span.long{display:none;} }
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;overflow:hidden;color:var(--cream);}
+  .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+  .hero::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg, rgba(11,37,33,.15) 0%, rgba(11,37,33,.35) 55%, rgba(6,20,18,.88) 100%);
+  }
+  .hero-content{position:relative;z-index:2;padding:64px 0 56px;width:100%;}
+  .hero .eyebrow{color:var(--sage);}
+  .hero .eyebrow::before{background:var(--sage);}
+  .hero h1{
+    font-size:clamp(34px,5.2vw,60px);
+    color:var(--cream);
+    max-width:16ch;
+    margin:18px 0 20px;
+  }
+  .hero h1 em{font-style:italic;color:var(--sage);font-weight:400;}
+  .hero p.lead{max-width:56ch;font-size:clamp(16px,2vw,19px);color:#EDE9DE;margin:0 0 30px;}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:14px;align-items:center;}
+  .hero-note{font-size:13px;color:var(--sage-2);margin-top:14px;}
+
+  /* ---------- QUICK FACTS ---------- */
+  .facts{background:var(--teal-deep);color:var(--cream);}
+  .facts .wrap{
+    display:grid;grid-template-columns:repeat(5,1fr);
+    padding:22px 24px;gap:8px;
+  }
+  .facts .fact{text-align:center;padding:6px 8px;border-left:1px solid rgba(255,255,255,.12);}
+  .facts .fact:first-child{border-left:none;}
+  .facts .fact b{display:block;font-family:'Newsreader',serif;font-size:22px;font-weight:600;}
+  .facts .fact span{font-size:11.5px;letter-spacing:.05em;color:var(--sage-2);text-transform:uppercase;}
+  @media(max-width:800px){
+    .facts .wrap{grid-template-columns:repeat(2,1fr);}
+    .facts .fact:nth-child(3){border-left:none;}
+  }
+
+  /* ---------- SECTIONS ---------- */
+  section{padding:96px 0;}
+  section.tight{padding:72px 0;}
+  .section-head{max-width:640px;margin:0 0 44px;}
+  .section-head h2{font-size:clamp(26px,3.6vw,38px);margin-top:14px;}
+  .section-head p{color:var(--ink-2);font-size:16.5px;margin-top:14px;}
+  .band-cream2{background:var(--cream-2);}
+  .band-paper{background:var(--paper);}
+
+  /* reveal on scroll */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in{opacity:1;transform:none;}
+  @media(prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none;}
+    *{animation:none!important;transition:none!important;}
+  }
+
+  /* ---------- COMPARISON / RECEIPT ---------- */
+  .twin-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:40px;align-items:stretch;}
+  @media(max-width:900px){.twin-grid{grid-template-columns:1fr;}}
+  .twin-copy h2{margin-bottom:16px;}
+  .twin-copy p{color:var(--ink-2);font-size:16px;margin:0 0 14px;}
+  .twin-copy p:last-child{margin-bottom:0;}
+
+  .receipt{
+    background:var(--cream);
+    border:1px solid var(--line);
+    border-radius:var(--r-lg);
+    box-shadow:var(--shadow-strong);
+    padding:32px 30px;
+    position:relative;
+    background-image:
+      radial-gradient(circle at 0 22px, transparent 9px, var(--cream) 9.5px),
+      radial-gradient(circle at 100% 22px, transparent 9px, var(--cream) 9.5px);
+  }
+  .receipt::before, .receipt::after{
+    content:"";position:absolute;left:0;right:0;height:22px;
+    background-image:repeating-linear-gradient(90deg, var(--cream) 0 10px, transparent 10px 20px);
+    background-color:var(--cream-2);
+  }
+  .receipt::before{top:-1px;border-radius:var(--r-lg) var(--r-lg) 0 0;}
+  .receipt::after{bottom:-1px;border-radius:0 0 var(--r-lg) var(--r-lg);}
+  .receipt-inner{position:relative;z-index:2;}
+  .receipt-label{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);font-weight:700;text-align:center;margin-bottom:6px;}
+  .receipt-sub{text-align:center;font-size:12.5px;color:var(--ink-2);margin-bottom:22px;}
+  .receipt-total{text-align:center;padding:18px 0 22px;border-bottom:1px dashed var(--line);margin-bottom:18px;}
+  .receipt-total .num{font-family:'Newsreader',serif;font-size:clamp(38px,6vw,54px);font-weight:600;color:var(--terracotta-deep);line-height:1;}
+  .receipt-total .cur{font-size:.5em;vertical-align:top;}
+  .receipt-total .cents{font-size:.45em;vertical-align:top;}
+  .receipt-rows{display:grid;grid-template-columns:1fr 1fr;gap:16px 20px;margin-bottom:18px;}
+  .receipt-row b{display:block;font-family:'Newsreader',serif;font-size:20px;color:var(--teal-deep);}
+  .receipt-row span{font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-2);}
+  .receipt-rating{
+    display:flex;align-items:center;justify-content:center;gap:10px;
+    border-top:1px dashed var(--line);padding-top:18px;
+  }
+  .receipt-rating .star{color:var(--terracotta);font-size:20px;}
+  .receipt-rating b{font-family:'Newsreader',serif;font-size:20px;}
+  .receipt-rating span{font-size:12.5px;color:var(--ink-2);}
+
+  /* ---------- REASONING PROSE ---------- */
+  .prose{max-width:760px;}
+  .prose h2{margin-bottom:20px;}
+  .prose p{font-size:17px;color:var(--ink-2);margin:0 0 18px;}
+  .prose strong{color:var(--teal-deep);}
+
+  /* ---------- WORRY QUOTES ---------- */
+  .quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+  @media(max-width:760px){.quotes{grid-template-columns:1fr;}}
+  .quote-card{
+    background:var(--cream);border:1px solid var(--line);border-radius:var(--r);
+    padding:24px 26px;position:relative;
+  }
+  .quote-card::before{content:"“";font-family:'Newsreader',serif;font-size:46px;color:var(--sage);position:absolute;top:2px;left:16px;line-height:1;}
+  .quote-card p{margin:18px 0 0;font-style:italic;font-family:'Newsreader',serif;font-size:17px;color:var(--ink);}
+
+  /* ---------- BENEFITS GRID ---------- */
+  .benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  @media(max-width:900px){.benefits{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:620px){.benefits{grid-template-columns:1fr;}}
+  .benefit{
+    background:var(--cream);border-radius:var(--r);padding:26px 24px;
+    border:1px solid var(--line);
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .benefit:hover{transform:translateY(-4px);box-shadow:var(--shadow-soft);}
+  .benefit .mark{font-family:'Newsreader',serif;font-style:italic;color:var(--terracotta);font-size:15px;display:block;margin-bottom:12px;}
+  .benefit h3{font-size:19px;margin-bottom:10px;}
+  .benefit p{margin:0;color:var(--ink-2);font-size:15px;}
+
+  /* ---------- GALLERY ---------- */
+  .gallery{
+    display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:150px;gap:10px;
+  }
+  .gallery a{grid-column:span 1;grid-row:span 1;overflow:hidden;border-radius:12px;position:relative;display:block;}
+  .gallery a:nth-child(1){grid-column:span 2;grid-row:span 2;}
+  .gallery a:nth-child(4){grid-column:span 2;}
+  .gallery img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
+  .gallery a:hover img{transform:scale(1.06);}
+  .gallery figcaption{position:absolute;left:10px;bottom:8px;color:#fff;font-size:11.5px;background:rgba(11,37,33,.55);padding:3px 9px;border-radius:999px;letter-spacing:.02em;}
+  @media(max-width:700px){
+    .gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:130px;}
+    .gallery a:nth-child(1){grid-column:span 2;grid-row:span 2;}
+    .gallery a:nth-child(4){grid-column:span 1;}
+  }
+
+  /* ---------- OFFER ---------- */
+  .offer-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:36px;align-items:start;}
+  @media(max-width:900px){.offer-grid{grid-template-columns:1fr;}}
+  .checklist{list-style:none;margin:0 0 30px;padding:0;display:grid;gap:12px;}
+  .checklist li{display:flex;gap:12px;font-size:16px;color:var(--ink);}
+  .checklist li::before{content:"✓";color:var(--teal);font-weight:800;font-size:17px;}
+
+  .market{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--cream);}
+  .market-row{display:flex;align-items:center;gap:14px;padding:14px 18px;border-bottom:1px solid var(--line);}
+  .market-row:last-child{border-bottom:none;}
+  .market-row.highlight{background:var(--terracotta);color:var(--cream);}
+  .market-row .m-name{flex:0 0 40%;font-size:14px;}
+  .market-row .m-name small{display:block;color:inherit;opacity:.7;font-size:11.5px;}
+  .market-row .m-bar{flex:1;height:8px;border-radius:999px;background:var(--paper);position:relative;overflow:hidden;}
+  .market-row.highlight .m-bar{background:rgba(255,255,255,.3);}
+  .market-row .m-bar i{position:absolute;left:0;top:0;bottom:0;background:var(--teal);border-radius:999px;}
+  .market-row.highlight .m-bar i{background:var(--cream);}
+  .market-row .m-price{flex:0 0 auto;font-family:'Newsreader',serif;font-weight:600;font-size:16px;}
+
+  .value-card{
+    margin-top:28px;background:var(--teal-deep);color:var(--cream);
+    border-radius:var(--r-lg);padding:30px 28px;
+  }
+  .value-card .num{font-family:'Newsreader',serif;font-size:38px;font-weight:600;}
+  .value-card ul{list-style:none;margin:16px 0 24px;padding:0;display:grid;gap:8px;font-size:14.5px;color:var(--sage-2);}
+  .value-card ul li::before{content:"— ";}
+  .value-card small{display:block;margin-top:16px;font-size:13px;color:var(--sage-2);}
+
+  /* ---------- FAQ ---------- */
+  .faq{max-width:780px;}
+  details{border-bottom:1px solid var(--line);padding:20px 0;}
+  details summary{
+    cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;
+    font-family:'Newsreader',serif;font-size:18.5px;color:var(--teal-deep);font-weight:500;
+  }
+  details summary::-webkit-details-marker{display:none;}
+  details summary::after{content:"+";font-size:22px;color:var(--terracotta);flex:0 0 auto;transition:transform .2s ease;}
+  details[open] summary::after{transform:rotate(45deg);}
+  details p{color:var(--ink-2);margin:14px 0 0;font-size:15.5px;max-width:64ch;}
+
+  /* ---------- RISK ---------- */
+  .risk-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;}
+  @media(max-width:860px){.risk-grid{grid-template-columns:1fr;}}
+  .risk-note{background:var(--cream);border:1px solid var(--line);border-radius:var(--r);padding:24px;font-size:14.5px;color:var(--ink-2);}
+  .risk-note + .risk-note{margin-top:14px;}
+  .risk-note b{color:var(--teal-deep);display:block;margin-bottom:6px;font-family:'Newsreader',serif;font-size:16.5px;}
+
+  /* ---------- FINAL CTA ---------- */
+  .final{
+    position:relative;color:var(--cream);overflow:hidden;text-align:center;
+    padding:110px 0;
+  }
+  .final img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+  .final::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(11,37,33,.75), rgba(6,20,18,.92));}
+  .final-content{position:relative;z-index:2;max-width:680px;margin:0 auto;}
+  .final h2{color:var(--cream);font-size:clamp(28px,4vw,40px);}
+  .final .serif-italic{color:var(--sage);}
+  .final p.ps{max-width:640px;margin:40px auto 0;font-size:14px;color:var(--sage-2);text-align:left;border-top:1px solid rgba(255,255,255,.15);padding-top:26px;}
+  .final p.ps b{color:var(--cream);}
+
+  footer{background:var(--teal-deep);color:var(--sage-2);padding:36px 0;font-size:13px;}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+  footer strong{color:var(--cream);}
+
+  .sticky-cta{
+    position:fixed;bottom:0;left:0;right:0;z-index:60;
+    background:rgba(11,37,33,.97);backdrop-filter:blur(6px);
+    display:flex;align-items:center;justify-content:space-between;gap:14px;
+    padding:12px 18px;transform:translateY(110%);transition:transform .3s ease;
+    box-shadow:0 -8px 30px rgba(0,0,0,.25);
+  }
+  .sticky-cta.show{transform:translateY(0);}
+  .sticky-cta .info{color:var(--cream);font-size:13px;}
+  .sticky-cta .info b{display:block;font-family:'Newsreader',serif;font-size:17px;}
+  @media(min-width:860px){.sticky-cta{display:none;}}
+</style>
+</head>
+<body>
+
+<header class="nav" id="siteNav">
+  <div class="wrap">
+    <div class="brand">
+      <strong>Vila Praia do Retirinho</strong>
+      <span>Aracati · CE</span>
+    </div>
+    <a class="btn btn-primary btn-sm" href="https://wa.me/5538992023036?text=Ol%C3%A1%20Denisson%2C%20vi%20o%20site%20da%20casa%20na%20Vila%20Praia%20do%20Retirinho%20e%20quero%20saber%20se%20%C3%A9%20rent%C3%A1vel%20para%20mim." target="_blank" rel="noopener">
+      Falar com Denisson <span class="long">Santos</span>
+    </a>
+  </div>
+</header>
+
+<section class="hero">
+  <img src="fachada-piscina-dia.jpg" alt="Fachada e piscina da casa na Vila Praia do Retirinho, Aracati-CE" loading="eager" fetchpriority="high">
+  <div class="hero-content wrap">
+    <p class="eyebrow">Vila Praia do Retirinho · Aracati – CE · Gestão Mandinga Imóveis</p>
+    <h1>A casa mais barata da vila — com o retorno já <em>provado</em> pela vizinha</h1>
+    <p class="lead">R$&nbsp;380.000. Só faltam pequenos reparos de acabamento e a mobília, por sua conta. A casa gêmea, na mesma vila e sob a mesma gestão, já faturou mais de R$&nbsp;100 mil em diárias — e hoje vale R$&nbsp;550 mil pronta.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="https://wa.me/5538992023036?text=Ol%C3%A1%20Denisson%2C%20quero%20saber%20se%20a%20casa%20da%20Vila%20Praia%20do%20Retirinho%20%C3%A9%20rent%C3%A1vel%20para%20mim." target="_blank" rel="noopener">Quero saber se é rentável para mim →</a>
+      <a class="btn btn-ghost" style="border-color:var(--sage);color:var(--cream);" href="#comparavel">Ver o relatório da casa gêmea</a>
+    </div>
+    <p class="hero-note">Fale direto com o especialista Denisson Santos · CRECI 23745 J · Sem compromisso</p>
+  </div>
+</section>
+
+<div class="facts">
+  <div class="wrap">
+    <div class="fact"><b>R$ 380 mil</b><span>Menor preço da vila</span></div>
+    <div class="fact"><b>96 m²</b><span>Privativos · 720 m² terreno</span></div>
+    <div class="fact"><b>2 suítes</b><span>2 dormitórios · 2 vagas</span></div>
+    <div class="fact"><b>12x</b><span>Direto com o proprietário</span></div>
+    <div class="fact"><b>R$ 10–20k</b><span>Acabamento estimado</span></div>
+  </div>
+</div>
+
+<section id="comparavel">
+  <div class="wrap twin-grid">
+    <div class="twin-copy reveal">
+      <p class="eyebrow">A prova ao lado</p>
+      <h2>A casa gêmea, mesma vila, mesma gestão</h2>
+      <p>Você não está testando um modelo novo. Na mesma vila, sob a mesma gestão da Mandinga, uma casa comparável — a <strong>Lar Tropical</strong> — já provou o modelo neste endereço e hoje está à venda, pronta, por R$&nbsp;550 mil.</p>
+      <p>Não é projeção de vendedor: é histórico auditável do sistema de reservas, entre dez/2024 e jun/2026, somando Airbnb, reservas diretas, Booking.com e VRBO.</p>
+      <p>Peça ao Denisson o relatório financeiro completo da Lar Tropical para calcular o seu payback antes de decidir.</p>
+    </div>
+    <div class="reveal">
+      <div class="receipt">
+        <div class="receipt-inner">
+          <p class="receipt-label">Faturamento em diárias</p>
+          <p class="receipt-sub">Lar Tropical · mesma vila · ≈19 meses de operação</p>
+          <div class="receipt-total">
+            <span class="num" data-count="100622.31"><span class="cur">R$&nbsp;</span>0<span class="cents">,00</span></span>
+          </div>
+          <div class="receipt-rows">
+            <div class="receipt-row"><b>206</b><span>Diárias concluídas</span></div>
+            <div class="receipt-row"><b>R$ 487,55</b><span>Ticket médio</span></div>
+            <div class="receipt-row"><b>~R$ 5.300</b><span>Média de faturamento / mês</span></div>
+            <div class="receipt-row"><b>4</b><span>Canais de reserva</span></div>
+          </div>
+          <div class="receipt-rating">
+            <span class="star">★</span>
+            <b>4,89 / 5</b>
+            <span>38 avaliações · Superhost</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band-cream2">
+  <div class="wrap prose reveal">
+    <p class="eyebrow">A conta que sobra a seu favor</p>
+    <h2>Você está olhando para a versão de entrada de uma oportunidade já comprovada</h2>
+    <p>Comprar um imóvel de praia para virar renda de temporada tem um problema: você não sabe se vai vingar até fazer os ajustes e testar por conta própria.</p>
+    <p>Esta casa resolve essa dúvida antes de você assinar. A gêmea <strong>Lar Tropical</strong>, já pronta e sob gestão da Mandinga, faturou mais de R$&nbsp;100 mil em diárias e está à venda por R$&nbsp;550 mil.</p>
+    <p>Esta aqui é a versão de entrada: <strong>R$ 380 mil</strong>, com pequenos reparos de acabamento, numa vila onde as casas prontas já valem entre R$&nbsp;450 mil e R$&nbsp;650 mil.</p>
+    <p>A diferença de preço é exatamente o espaço que sobra para você investir R$&nbsp;10 a 20 mil no acabamento — com curadoria, mobiliário e gestão de temporada feitos pela Mandinga.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Se você já pensou em investir em praia</p>
+      <h2>Provavelmente já se pegou pensando algo assim</h2>
+    </div>
+    <div class="quotes reveal">
+      <div class="quote-card"><p>E se eu comprar, arrumar a casa, e ela ficar meses sem hóspede?</p></div>
+      <div class="quote-card"><p>Não moro no Ceará — como vou confiar em alguém para administrar isso de longe?</p></div>
+      <div class="quote-card"><p>Todo anúncio promete retorno, mas nenhum me mostra um número real, auditável, ao lado.</p></div>
+      <div class="quote-card"><p>Tenho medo de gastar com o acabamento e descobrir depois que o imóvel não compete no mercado.</p></div>
+      <div class="quote-card"><p>Prefiro comprar pronto — mas o que está pronto na mesma vila custa R$ 170 mil a mais.</p></div>
+      <div class="quote-card"><p>Quero um ativo que trabalhe por mim, não mais uma dor de cabeça para administrar.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band-paper">
+  <div class="wrap">
+    <img src="varanda-interna.jpg" alt="Varanda interna da casa, ainda em acabamento, na Vila Praia do Retirinho" loading="lazy" style="border-radius:var(--r-lg);margin-bottom:44px;box-shadow:var(--shadow-soft);">
+    <div class="section-head reveal">
+      <p class="eyebrow">A solução</p>
+      <h2>A versão de entrada do mesmo modelo, com número auditado ao lado</h2>
+      <p>Esta casa está à venda por R$&nbsp;380.000 — o valor mais baixo entre as casas da vila hoje, justamente porque é a única que ainda depende de pequenos reparos de acabamento (estimados em R$&nbsp;10 a 20 mil, por sua conta).</p>
+      <p>O caminho: você compra (entrada + até 12x direto com o proprietário, sem banco), finaliza o acabamento com orçamento definido, e contrata a Mandinga para operar tudo — do anúncio ao check-out do hóspede.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Por que essa conta fecha</p>
+      <h2>O que você ganha ao entrar pela versão de entrada</h2>
+    </div>
+    <div class="benefits reveal">
+      <div class="benefit">
+        <span class="mark">01</span>
+        <h3>Ponto de entrada mais barato da vila</h3>
+        <p>R$&nbsp;380 mil, contra R$&nbsp;450 a 650 mil das casas prontas — a diferença é o espaço para você acompanhar o acabamento.</p>
+      </div>
+      <div class="benefit">
+        <span class="mark">02</span>
+        <h3>Orçamento de acabamento definido</h3>
+        <p>R$&nbsp;10 a 20 mil: você sabe exatamente quanto vai investir antes de comprar, sem surpresa no meio do caminho.</p>
+      </div>
+      <div class="benefit">
+        <span class="mark">03</span>
+        <h3>Parcelamento direto com o proprietário</h3>
+        <p>Até 12x, sem depender de aprovação de banco ou burocracia de financiamento.</p>
+      </div>
+      <div class="benefit">
+        <span class="mark">04</span>
+        <h3>Prova financeira auditável ao lado</h3>
+        <p>R$&nbsp;100.622,31 faturados por uma casa comparável, sob a mesma gestão, em ≈19 meses de operação real.</p>
+      </div>
+      <div class="benefit">
+        <span class="mark">05</span>
+        <h3>Gestão completa da temporada</h3>
+        <p>Acabamento curado, anúncios em Airbnb, Booking e VRBO, check-in, limpeza e manutenção — pela Mandinga, mesmo você morando longe.</p>
+      </div>
+      <div class="benefit">
+        <span class="mark">06</span>
+        <h3>Estrutura pronta para finalizar</h3>
+        <p>96m² privativos, 2 suítes, 2 vagas, 720m² de terreno: a base física já está lá, faltando o acabamento e a operação.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band-cream2">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">A vila e o entorno</p>
+      <h2>Praia do Retirinho, Aracati — CE</h2>
+    </div>
+    <div class="gallery reveal">
+      <a href="fachada-piscina-dia.jpg" target="_blank" rel="noopener"><img src="fachada-piscina-dia.jpg" loading="lazy" alt="Fachada e piscina da casa durante o dia"><figcaption>Fachada · piscina</figcaption></a>
+      <a href="terreno-falesia.jpg" target="_blank" rel="noopener"><img src="terreno-falesia.jpg" loading="lazy" alt="Falésia e gramado à beira-mar na Vila Praia do Retirinho"><figcaption>Falésia · beira-mar</figcaption></a>
+      <a href="litoral-por-do-sol.jpg" target="_blank" rel="noopener"><img src="litoral-por-do-sol.jpg" loading="lazy" alt="Litoral ao pôr do sol visto da vila"><figcaption>Litoral</figcaption></a>
+      <a href="piscina-vista-mar.jpg" target="_blank" rel="noopener"><img src="piscina-vista-mar.jpg" loading="lazy" alt="Piscina com vista para o mar"><figcaption>Piscina · vista mar</figcaption></a>
+      <a href="piscina-entardecer.jpg" target="_blank" rel="noopener"><img src="piscina-entardecer.jpg" loading="lazy" alt="Piscina ao entardecer"><figcaption>Entardecer</figcaption></a>
+      <a href="fachada-entardecer.jpg" target="_blank" rel="noopener"><img src="fachada-entardecer.jpg" loading="lazy" alt="Fachada da casa ao entardecer"><figcaption>Fachada · fim de tarde</figcaption></a>
+    </div>
+  </div>
+</section>
+
+<section id="oferta">
+  <div class="wrap offer-grid">
+    <div class="reveal">
+      <p class="eyebrow">A oferta</p>
+      <h2 style="margin:14px 0 26px;">O que está na mesa</h2>
+      <ul class="checklist">
+        <li>Casa 96m² privativos / 720m² total — Praia do Retirinho, Aracati (CE)</li>
+        <li>2 dormitórios · 2 suítes · 2 vagas</li>
+        <li>Acabamento + mobília por conta do comprador (est. R$&nbsp;10.000–R$&nbsp;20.000)</li>
+        <li>Gestão de temporada com a Mandinga (Airbnb, Booking, VRBO)</li>
+      </ul>
+      <a class="btn btn-primary" href="https://wa.me/5538992023036?text=Ol%C3%A1%20Denisson%2C%20quero%20saber%20se%20a%20casa%20da%20Vila%20Praia%20do%20Retirinho%20%C3%A9%20rent%C3%A1vel%20para%20mim." target="_blank" rel="noopener">Quero saber se é rentável para mim →</a>
+    </div>
+    <div class="reveal">
+      <p class="eyebrow" style="margin-bottom:12px;">Referência de mercado · mesma vila (casas prontas)</p>
+      <div class="market">
+        <div class="market-row">
+          <div class="m-name">Coast House</div>
+          <div class="m-bar"><i style="width:69%"></i></div>
+          <div class="m-price">R$ 450.000</div>
+        </div>
+        <div class="market-row">
+          <div class="m-name">Lar Tropical <small>reformada · casa do relatório</small></div>
+          <div class="m-bar"><i style="width:85%"></i></div>
+          <div class="m-price">R$ 550.000</div>
+        </div>
+        <div class="market-row">
+          <div class="m-name">Alto Potencial de Rendimento</div>
+          <div class="m-bar"><i style="width:100%"></i></div>
+          <div class="m-price">R$ 650.000</div>
+        </div>
+        <div class="market-row highlight">
+          <div class="m-name">Esta casa <small>em finalização</small></div>
+          <div class="m-bar"><i style="width:58%"></i></div>
+          <div class="m-price">R$ 380.000</div>
+        </div>
+      </div>
+      <div class="value-card">
+        <p style="margin:0 0 4px;font-size:13px;color:var(--sage-2);text-transform:uppercase;letter-spacing:.08em;">Valor do imóvel</p>
+        <div class="num">R$ 380.000</div>
+        <ul>
+          <li>Entrada + parcelamento em até 12x direto com o proprietário</li>
+          <li>Sem financiamento bancário</li>
+        </ul>
+        <small>Investindo R$&nbsp;390 a 400 mil no total (imóvel + acabamento), você entra numa faixa de valor da vila em que o comparável mais próximo, já pronto, está avaliado em R$&nbsp;550 mil.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band-paper">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Perguntas difíceis, respostas diretas</p>
+      <h2>O que investidor pergunta antes de fechar</h2>
+    </div>
+    <div class="faq reveal">
+      <details open>
+        <summary>Por que essa casa é mais barata que as outras da vila?</summary>
+        <p>Porque ainda depende de pequenos reparos de acabamento e da mobília, com orçamento estimado em R$&nbsp;10 a 20 mil, por conta do comprador. É essa diferença que coloca o preço abaixo das casas já prontas.</p>
+      </details>
+      <details>
+        <summary>Moro longe, como fica a administração da locação?</summary>
+        <p>A Mandinga Imóveis assume tudo: anúncios em Airbnb, Booking e VRBO, check-in, limpeza e manutenção — a mesma equipe que administra a Lar Tropical hoje.</p>
+      </details>
+      <details>
+        <summary>Os números da Lar Tropical são reais?</summary>
+        <p>São dados históricos auditáveis, extraídos do sistema de reservas entre dez/2024 e jun/2026, somando Airbnb, reservas diretas, Booking.com e VRBO. Denisson pode enviar o relatório completo.</p>
+      </details>
+      <details>
+        <summary>Como funciona o parcelamento?</summary>
+        <p>Entrada + até 12x direto com o proprietário, sem depender de aprovação de banco ou burocracia de financiamento.</p>
+      </details>
+      <details>
+        <summary>Posso visitar antes de decidir?</summary>
+        <p>Sim — a visita pode ser presencial ou virtual, antes de qualquer compromisso.</p>
+      </details>
+      <details>
+        <summary>O que está incluso nos R$ 380 mil?</summary>
+        <p>A casa com 96m² privativos, 720m² de terreno, 2 suítes e 2 vagas. O acabamento e a mobília ficam por conta do comprador, com orçamento já estimado.</p>
+      </details>
+      <details>
+        <summary>Que documentação garante a negociação?</summary>
+        <p>CRECI 23745 J, com negociação direta com o proprietário e documentação transparente em todas as etapas.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Redução de risco</p>
+      <h2>Imóvel não devolve dinheiro — mas aqui o risco é concreto e menor</h2>
+    </div>
+    <div class="risk-grid reveal">
+      <div>
+        <div class="risk-note"><b>Prova financeira auditável</b>Relatório real de reservas da casa comparável, não projeção de vendedor.</div>
+        <div class="risk-note"><b>Orçamento de acabamento fechado</b>Sem surpresa de custo depois da compra — a faixa já está definida.</div>
+      </div>
+      <div>
+        <div class="risk-note"><b>Visita presencial ou virtual</b>Antes de fechar negócio, você confere o imóvel do seu jeito.</div>
+        <div class="risk-note"><b>Documentação transparente</b>CRECI 23745 J, negociação direta com o proprietário.</div>
+      </div>
+    </div>
+    <p style="max-width:700px;margin-top:36px;color:var(--ink-2);font-size:15px;">
+      R$ 380 mil é o menor valor à venda na vila hoje. As demais casas custam de R$&nbsp;450 a R$&nbsp;650 mil — essa diferença existe só porque o acabamento ainda não foi feito, e desaparece assim que alguém completar. O parcelamento em até 12x direto com o proprietário depende da disponibilidade dele em manter essa condição — não é financiamento bancário garantido por prazo indeterminado.
+    </p>
+  </div>
+</section>
+
+<section class="final">
+  <img src="piscina-entardecer.jpg" alt="Piscina da casa ao entardecer, Vila Praia do Retirinho" loading="lazy">
+  <div class="final-content">
+    <p class="eyebrow" style="justify-content:center;color:var(--sage);">Antes que outro investidor feche primeiro</p>
+    <h2 style="margin-top:16px;">A casa gêmea já provou o modelo: mais de R$&nbsp;100 mil faturados, nota <span class="serif-italic">4,89</span>, e hoje vale R$&nbsp;550 mil pronta. Esta aqui ainda está na largada, por R$&nbsp;380 mil.</h2>
+    <div style="margin-top:34px;">
+      <a class="btn btn-primary" href="https://wa.me/5538992023036?text=Ol%C3%A1%20Denisson%2C%20quero%20falar%20sobre%20a%20casa%20da%20Vila%20Praia%20do%20Retirinho." target="_blank" rel="noopener">Falar agora com o especialista Denisson Santos →</a>
+    </div>
+    <p class="ps"><b>P.S.</b> Na mesma vila, casas prontas custam entre R$&nbsp;450 e R$&nbsp;650 mil — e a mais parecida com esta, já pronta, tem relatório financeiro real de mais de R$&nbsp;100 mil faturados em diárias. Essa aqui você ainda compra na largada, por R$&nbsp;380 mil. Fale com o Denisson antes que outro investidor feche primeiro.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><strong>Vila Praia do Retirinho</strong> · Aracati-CE</div>
+    <div>Mandinga Imóveis · Denisson Santos · CRECI 23745 J · Negociação direta com o proprietário</div>
+  </div>
+</footer>
+
+<div class="sticky-cta" id="stickyCta">
+  <div class="info"><b>R$ 380.000</b>Vila Praia do Retirinho</div>
+  <a class="btn btn-primary btn-sm" href="https://wa.me/5538992023036?text=Ol%C3%A1%20Denisson%2C%20quero%20saber%20se%20a%20casa%20da%20Vila%20Praia%20do%20Retirinho%20%C3%A9%20rent%C3%A1vel%20para%20mim." target="_blank" rel="noopener">Falar com Denisson</a>
+</div>
+
+<script>
+  // sticky nav background
+  var nav = document.getElementById('siteNav');
+  var stickyCta = document.getElementById('stickyCta');
+  window.addEventListener('scroll', function(){
+    var y = window.scrollY;
+    nav.classList.toggle('scrolled', y > 40);
+    stickyCta.classList.toggle('show', y > 520);
+  }, {passive:true});
+
+  // reveal on scroll
+  var reveals = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, {threshold:.15});
+    reveals.forEach(function(el){ io.observe(el); });
+  } else {
+    reveals.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  // count-up on the revenue receipt
+  var counted = false;
+  var counterEl = document.querySelector('[data-count]');
+  function runCounter(){
+    if(counted || !counterEl) return;
+    counted = true;
+    var target = parseFloat(counterEl.getAttribute('data-count'));
+    var dur = 1400, start = null;
+    var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(prefersReduced){
+      renderVal(target); return;
+    }
+    function step(ts){
+      if(!start) start = ts;
+      var p = Math.min((ts - start) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      renderVal(target * eased);
+      if(p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  function renderVal(v){
+    var reais = Math.floor(v).toLocaleString('pt-BR');
+    var cents = (v.toFixed(2).split('.')[1]) || '00';
+    counterEl.innerHTML = '<span class="cur">R$&nbsp;</span>' + reais + '<span class="cents">,' + cents + '</span>';
+  }
+  if(counterEl){
+    if('IntersectionObserver' in window){
+      var io2 = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){ if(e.isIntersecting) runCounter(); });
+      }, {threshold:.5});
+      io2.observe(counterEl.closest('.receipt'));
+    } else { runCounter(); }
+  }
+</script>
+</body>
+</html>
